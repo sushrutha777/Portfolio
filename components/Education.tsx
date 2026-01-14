@@ -6,22 +6,22 @@ const Education: React.FC = () => {
   const education = [
     {
       school: "RNS Institute of Technology",
-      degree: "Bachelor of Engineering | CSE( Data Science)",
+      degree: "Bachelor of Engineering | CSE(Data Science)",
       period: "2023 — 2027",
       grade: "GPA : 9.0",
       location: "Bengaluru, India"
     },
     {
       school: "Expert PU College",
-      degree: "PCMB (Pre-University Education)",
+      degree: "PCMB",
       period: "2021 — 2023",
       grade: "Grade : 90.5 %",
       location: "Mangaluru, India"
     },
     {
-      school: "Shri Rama Vidya Kendra, Kalladka",
+      school: "Shri Rama Vidya Kendra",
       degree: "High School (SSLC)",
-      period: "2011 — 2021",
+      period: "2018 — 2021",
       grade: "Grade : 97.6 %",
       location: "Kalladka, India"
     }
@@ -42,7 +42,7 @@ const Education: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="group glass p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] border-slate-200 dark:border-white/5 hover:border-brand-cyan/20 transition-all flex flex-col md:flex-row gap-6 items-start"
+            className="group glass p-5 md:p-8 rounded-[2rem] md:rounded-[2.5rem] border-slate-200 dark:border-white/5 hover:border-brand-cyan/20 transition-all flex flex-col md:flex-row gap-6 items-start"
           >
 
             <div className="flex-1 w-full">

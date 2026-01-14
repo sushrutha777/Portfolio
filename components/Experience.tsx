@@ -11,13 +11,13 @@ const Experience: React.FC = () => {
       </div>
 
       <div className="relative max-w-4xl mx-auto">
-        <div className="absolute left-8 md:left-1/2 -ml-[1px] w-[2px] h-full bg-slate-200 dark:bg-slate-800"></div>
+        <div className="absolute left-6 md:left-1/2 -ml-[1px] w-[2px] h-full bg-slate-200 dark:bg-slate-800"></div>
 
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="relative pl-20 md:pl-0 md:pr-1/2 mb-20 group"
+          className="relative pl-14 md:pl-0 md:pr-1/2 mb-20 group"
         >
 
 
