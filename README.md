@@ -3,7 +3,7 @@
 A modern, immersive portfolio website built to showcase my journey as a **Computer Science & Data Science student** specializing in **Machine Learning, Generative AI, and Data Analytics**.
 
 ## 🚀 Live Demo
-*(Add your deployment link here)*
+[Live Site](https://sushrutha-s-kottary.web.app)
 
 ## ✨ Features
 - **3D Deep Space Background**: A custom Three.js starfield animation with depth effect.
