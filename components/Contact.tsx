@@ -8,6 +8,7 @@ const Contact: React.FC = () => {
     name: '',
     phone: '',
     company: '',
+    location: '',
     message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -20,7 +21,7 @@ const Contact: React.FC = () => {
 
     setError('');
 
-    if (!formData.name || !formData.phone || !formData.company || !formData.message) {
+    if (!formData.name || !formData.phone || !formData.company || !formData.location || !formData.message) {
       setError('Please fill in all fields.');
       return;
     }
@@ -39,7 +40,7 @@ const Contact: React.FC = () => {
       });
 
       setIsSubmitted(true);
-      setFormData({ name: '', phone: '', company: '', message: '' });
+      setFormData({ name: '', phone: '', company: '', location: '', message: '' });
 
       // Reset message after 5 seconds
       setTimeout(() => setIsSubmitted(false), 5000);
@@ -109,6 +110,16 @@ const Contact: React.FC = () => {
                   placeholder="Company Name"
                   value={formData.company}
                   onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                  className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-cyan outline-none transition-all"
+                />
+              </div>
+              <div>
+                <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2 block">Location</label>
+                <input
+                  type="text"
+                  placeholder="Your Location"
+                  value={formData.location}
+                  onChange={(e) => setFormData({ ...formData, location: e.target.value })}
                   className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-cyan outline-none transition-all"
                 />
               </div>
