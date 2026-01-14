@@ -9,9 +9,9 @@ const Footer: React.FC = () => {
           <div className="text-2xl font-display font-black tracking-tighter text-slate-900 dark:text-white mb-2">S.KOTTARY</div>
           <p className="text-slate-500 text-sm font-medium italic">"Building the foundation for agentic intelligence."</p>
         </div>
-        
+
         <div className="flex gap-10">
-          <a href="#" className="text-[10px] font-bold text-slate-500 uppercase tracking-widest hover:text-brand-cyan transition-colors">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/sushrutha-s-kottary-994310291/" target="_blank" rel="noopener noreferrer" className="text-[10px] font-bold text-slate-500 uppercase tracking-widest hover:text-brand-cyan transition-colors">LinkedIn</a>
           <a href="#" className="text-[10px] font-bold text-slate-500 uppercase tracking-widest hover:text-brand-cyan transition-colors">GitHub</a>
           <a href="#" className="text-[10px] font-bold text-slate-500 uppercase tracking-widest hover:text-brand-cyan transition-colors">Resume</a>
         </div>

@@ -37,4 +37,4 @@ A modern, immersive portfolio website built to showcase my journey as a **Comput
 
 ## 📬 Contact
 - **Email**: sushruthaskottary777@gmail.com
-- **LinkedIn**: [Sushrutha S Kottary](https://www.linkedin.com/in/sushrutha-s-kottary)
+- **LinkedIn**: [Sushrutha S Kottary](https://www.linkedin.com/in/sushrutha-s-kottary-994310291/)
