@@ -72,7 +72,7 @@ const Projects: React.FC = () => {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100"
                 alt={p.title}
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent lg:hidden"></div>
+
             </div>
 
             <div className="flex-1 p-8 lg:p-12 flex flex-col justify-center">

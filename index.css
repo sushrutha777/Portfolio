@@ -27,7 +27,7 @@ body {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, #2DD4BF 0%, #7000ff 100%);
+    background: linear-gradient(135deg, #14b879a0 0%, #00e5ff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -40,11 +40,11 @@ body {
 
 .hover-3d:hover {
     transform: translateY(-8px) rotateX(4deg) rotateY(4deg);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0);
 }
 
 .dark .hover-3d:hover {
-    box-shadow: 0 20px 40px rgba(0, 242, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 255, 145, 0.05);
 }
 
 @keyframes scanline {
@@ -64,7 +64,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, transparent, rgba(0, 242, 255, 0.05), transparent);
+    background: linear-gradient(to bottom, transparent, rgba(0, 255, 145, 0.05), transparent);
     animation: scanline 8s linear infinite;
     pointer-events: none;
 }

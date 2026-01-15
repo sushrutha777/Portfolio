@@ -7,7 +7,7 @@ const Skills: React.FC = () => {
     {
       title: "Languages & Databases",
       icon: "💻",
-      skills: ["Python", "R", "C", "SQL", "MySQL", "MongoDB"]
+      skills: ["Python", "R", "C", "SQL", "MySQL", "MongoDB", "Firebase"]
     },
     {
       title: "ML, DL & NLP",
