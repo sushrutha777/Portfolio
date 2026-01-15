@@ -20,7 +20,7 @@ const Education: React.FC = () => {
     },
     {
       school: "Shri Rama Vidya Kendra",
-      degree: "High School (SSLC)",
+      degree: "High School",
       period: "2018 — 2021",
       grade: "Grade : 97.6 %",
       location: "Kalladka, India"
@@ -28,10 +28,9 @@ const Education: React.FC = () => {
   ];
 
   return (
-    <section id="education" className="scroll-mt-24">
+    <section id="education" className="scroll-mt-24 py-10 md:py-16">
       <div className="text-center mb-16">
-        <h2 className="text-sm font-bold text-brand-cyan tracking-[0.3em] uppercase mb-4">Academic Background</h2>
-        <h3 className="text-4xl font-display font-extrabold text-slate-900 dark:text-white">Education Path</h3>
+        <h3 className="text-4xl font-display font-extrabold text-brand-cyan">Education Path</h3>
       </div>
 
       <div className="max-w-4xl mx-auto space-y-12">

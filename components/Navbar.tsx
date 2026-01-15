@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 interface NavItem {
   label: string;
@@ -21,6 +22,8 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled, theme, toggleTheme }) => {
     { label: 'Skills', id: 'skills' },
     { label: 'Work Experience', id: 'experience' },
     { label: 'Projects', id: 'projects' },
+    { label: 'Certificates', id: 'certifications' },
+    { label: 'Achievements', id: 'achievements' },
     { label: 'Contact', id: 'contact' },
   ];
 
@@ -67,18 +70,37 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled, theme, toggleTheme }) => {
 
             <button
               onClick={toggleTheme}
-              className="w-10 h-10 glass rounded-full flex items-center justify-center text-lg hover:scale-110 active:scale-95 transition-all"
+              className="w-10 h-10 glass rounded-full flex items-center justify-center hover:scale-110 active:scale-95 transition-all relative overflow-hidden group"
               aria-label="Toggle theme"
             >
-              {theme === 'dark' ? (
-                <svg className="w-5 h-5 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-              ) : (
-                <svg className="w-5 h-5 text-brand-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                </svg>
-              )}
+              <AnimatePresence mode="wait">
+                {theme === 'dark' ? (
+                  <motion.div
+                    key="sun"
+                    initial={{ y: 20, opacity: 0, rotate: -90 }}
+                    animate={{ y: 0, opacity: 1, rotate: 0 }}
+                    exit={{ y: -20, opacity: 0, rotate: 90 }}
+                    transition={{ duration: 0.3, ease: "backOut" }}
+                  >
+                    <svg className="w-5 h-5 text-amber-300" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="5" />
+                      <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    key="moon"
+                    initial={{ y: 20, opacity: 0, rotate: -90 }}
+                    animate={{ y: 0, opacity: 1, rotate: 0 }}
+                    exit={{ y: -20, opacity: 0, rotate: 90 }}
+                    transition={{ duration: 0.3, ease: "backOut" }}
+                  >
+                    <svg className="w-5 h-5 text-brand-purple" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                    </svg>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </button>
 
 
@@ -87,10 +109,37 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled, theme, toggleTheme }) => {
           <div className="flex items-center gap-4 lg:hidden">
             <button
               onClick={toggleTheme}
-              className="w-10 h-10 glass rounded-full flex items-center justify-center text-lg"
+              className="w-10 h-10 glass rounded-full flex items-center justify-center relative overflow-hidden hov"
               aria-label="Toggle theme"
             >
-              {theme === 'dark' ? '☀️' : '🌙'}
+              <AnimatePresence mode="wait">
+                {theme === 'dark' ? (
+                  <motion.div
+                    key="sun-mobile"
+                    initial={{ y: 20, opacity: 0, rotate: -90 }}
+                    animate={{ y: 0, opacity: 1, rotate: 0 }}
+                    exit={{ y: -20, opacity: 0, rotate: 90 }}
+                    transition={{ duration: 0.3, ease: "backOut" }}
+                  >
+                    <svg className="w-5 h-5 text-amber-300" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="5" />
+                      <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    key="moon-mobile"
+                    initial={{ y: 20, opacity: 0, rotate: -90 }}
+                    animate={{ y: 0, opacity: 1, rotate: 0 }}
+                    exit={{ y: -20, opacity: 0, rotate: 90 }}
+                    transition={{ duration: 0.3, ease: "backOut" }}
+                  >
+                    <svg className="w-5 h-5 text-brand-purple" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                    </svg>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </button>
             <button
               className="text-slate-900 dark:text-white p-2"

@@ -52,7 +52,7 @@ const ThreeScene: React.FC = () => {
 
     const starMaterial = new THREE.PointsMaterial({
       vertexColors: true,
-      size: 1.7, // Smaller fixed size
+      size: 1.0, // Reduced size for a more professional, subtle look
       transparent: true,
       opacity: 1.0,
       sizeAttenuation: false, // Prevents growing when close

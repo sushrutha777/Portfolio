@@ -5,32 +5,41 @@ import { motion } from 'framer-motion';
 const Skills: React.FC = () => {
   const categories = [
     {
-      title: "Generative AI & LLMs",
-      icon: "🤖",
-      skills: ["RAG Systems", "LangChain", "LangGraph", "ReAct Agents", "Embeddings", "Vector Stores"]
+      title: "Languages & Databases",
+      icon: "💻",
+      skills: ["Python", "R", "C", "SQL", "MySQL", "MongoDB"]
     },
     {
       title: "ML, DL & NLP",
       icon: "🧠",
-      skills: ["Neural Networks", "CNN/RNN/LSTM", "Model Deployment", "Hyperparameter Tuning", "Streamlit", "Flask"]
+      skills: ["Supervised/Unsupervised Learning", "Neural Networks", "CNN", "RNN", "LSTM", "GRU", "Model Evaluation", "Feature Engineering", "Hyperparameter Tuning", "Model Deployment"]
     },
     {
-      title: "Programming",
-      icon: "💻",
-      skills: ["Python", "SQL", "MySQL", "MongoDB", "R", "C"]
+      title: "Generative AI",
+      icon: "🤖",
+      skills: ["RAG", "ReAct Agents & Tool", "LLM Integration", "LangChain", "LangGraph", "Embeddings & Vector Stores"]
     },
     {
-      title: "Data Analysis",
+      title: "Data Analysis & Visualization",
       icon: "📊",
-      skills: ["EDA", "Matplotlib", "Seaborn", "Tableau", "PowerBI", "Pandas", "NumPy"]
+      skills: ["EDA", "Data Cleaning", "Matplotlib", "Seaborn", "Tableau", "PowerBI"]
+    },
+    {
+      title: "Libraries & Platforms",
+      icon: "📚",
+      skills: ["Pandas", "NumPy", "Scikit-Learn", "TensorFlow", "Jupyter Notebook", "Google Colab", "VS Code", "Google Antigravity"]
+    },
+    {
+      title: "Version Control",
+      icon: "🔧",
+      skills: ["Git", "GitHub"]
     }
   ];
 
   return (
-    <section id="skills" className="scroll-mt-24">
+    <section id="skills" className="scroll-mt-24 py-10 md:py-16">
       <div className="text-center mb-16">
-        <h2 className="text-sm font-bold text-brand-cyan tracking-[0.3em] uppercase mb-4">Core Competencies</h2>
-        <h3 className="text-4xl font-display font-extrabold text-slate-900 dark:text-white">Technical Ecosystem</h3>
+        <h2 className="text-4xl font-display font-extrabold text-brand-cyan">Technical Skills</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

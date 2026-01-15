@@ -12,9 +12,9 @@ const Projects: React.FC = () => {
       challenge: 'Creating a grounded reasoning engine that switches tools based on query intent.',
       solution: 'Designed a ReAct agent using LangChain + LangGraph with Gemini 2.5 integration.',
       tags: ['LangChain', 'LangGraph', 'Gemini AI', 'Streamlit'],
-      codeLink: '#',
-      liveLink: '#',
-      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop'
+      codeLink: 'https://github.com/sushrutha777/AgenticRAG-with-Web-Search-and-Document-Search',
+      liveLink: 'https://end-to-end-rag-document-search-by-sushrutha-s-kottary.streamlit.app/',
+      image: '/agentic-rag.png'
     },
     {
       id: 'stock',
@@ -23,9 +23,9 @@ const Projects: React.FC = () => {
       challenge: 'Aggregating noisy news data into coherent, actionable financial insights.',
       solution: 'Integrated Google News RSS + Gemini AI for real-time news reasoning.',
       tags: ['Gemini API', 'Finance', 'News RSS', 'Python'],
-      codeLink: '#',
-      liveLink: '#',
-      image: 'https://images.unsplash.com/photo-1611974717484-2453e1f13b19?q=80&w=2070&auto=format&fit=crop'
+      codeLink: 'https://github.com/sushrutha777/Stock_Movement_Reason_Finder',
+      liveLink: 'https://stock-movement-reason-finder.streamlit.app/',
+      image: '/stock-movement.png'
     },
     {
       id: 'invoice',
@@ -34,30 +34,32 @@ const Projects: React.FC = () => {
       challenge: 'Handling multi-lingual complex layouts without traditional slow OCR pipelines.',
       solution: 'Used Gemini 2.5 Flash to direct-analyze PNG bytes for rapid data extraction.',
       tags: ['Gemini 2.5 Flash', 'Computer Vision', 'NLP'],
-      codeLink: '#',
-      liveLink: '#',
-      image: 'https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=2070&auto=format&fit=crop'
+      codeLink: 'https://github.com/sushrutha777/Multi-Language-Invoice-Extractor',
+      liveLink: 'https://multi-language-invoice-extractor-by-sushrutha-s-kottary.streamlit.app/',
+      image: '/invoice-extractor.png'
+    },
+    {
+      id: 'sentiment',
+      title: 'Movie Review Sentiment Analysis',
+      description: 'Built a Streamlit app using a fine-tuned DistilBERT model to classify reviews as Positive or Negative.',
+      challenge: 'Achieving 92% test accuracy with robust tokenization using Hugging Face Transformers.',
+      solution: 'Displays predictions with confidence scores for better interpretability.',
+      tags: ['DistilBERT', 'Hugging Face', 'NLP', 'Sentiment Analysis'],
+      codeLink: 'https://github.com/sushrutha777/Movie-Review-Analysis',
+      liveLink: 'https://movie-review-analysis-by-sushrutha.streamlit.app/',
+      image: '/sentiment-analysis.png'
     }
   ];
 
   return (
-    <section id="projects" className="scroll-mt-24">
-      <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-        <div>
-          <h2 className="text-sm font-bold text-brand-cyan tracking-[0.3em] uppercase mb-4">Portfolio</h2>
-          <h3 className="text-4xl font-display font-extrabold text-slate-900 dark:text-white">Deployed Systems</h3>
-        </div>
-        <a href="https://github.com" className="group flex items-center gap-2 text-slate-500 hover:text-brand-cyan transition-colors font-bold text-sm uppercase tracking-widest">
-          The Full Lab
-          <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-        </a>
+    <section id="projects" className="scroll-mt-24 py-10 md:py-16">
+      <div className="mb-16">
+        <h2 className="text-4xl font-display font-extrabold text-brand-cyan">Projects</h2>
       </div>
 
-      <div className="grid grid-cols-1 gap-12">
+      <div className="grid grid-cols-1 gap-20">
         {projects.map((p, idx) => (
-          <motion.div 
+          <motion.div
             key={p.id}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -65,14 +67,14 @@ const Projects: React.FC = () => {
             className="group glass rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row border-slate-200 dark:border-white/5 hover:border-brand-cyan/30 transition-all duration-500"
           >
             <div className="lg:w-1/2 overflow-hidden relative">
-              <img 
-                src={p.image} 
+              <img
+                src={p.image}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100"
                 alt={p.title}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent lg:hidden"></div>
             </div>
-            
+
             <div className="flex-1 p-8 lg:p-12 flex flex-col justify-center">
               <div className="flex flex-wrap gap-2 mb-6">
                 {p.tags.map(tag => (
@@ -81,7 +83,7 @@ const Projects: React.FC = () => {
                   </span>
                 ))}
               </div>
-              
+
               <h4 className="text-3xl font-display font-bold text-slate-900 dark:text-white mb-4 group-hover:text-brand-cyan transition-colors">{p.title}</h4>
               <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
                 {p.description}
@@ -100,7 +102,7 @@ const Projects: React.FC = () => {
 
               <div className="flex items-center gap-6">
                 <a href={p.codeLink} className="text-slate-900 dark:text-white flex items-center gap-2 font-bold text-sm hover:text-brand-cyan transition-colors">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z" /></svg>
                   Source Code
                 </a>
                 <a href={p.liveLink} className="text-slate-900 dark:text-white flex items-center gap-2 font-bold text-sm hover:text-brand-cyan transition-colors">

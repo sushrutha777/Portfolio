@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="scroll-mt-24">
+    <section id="about" className="scroll-mt-24 py-10 md:py-20 lg:py-32">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -15,9 +15,9 @@ const About: React.FC = () => {
           <div className="absolute -inset-4 bg-gradient-to-tr from-brand-cyan to-brand-purple rounded-3xl blur-2xl opacity-10 group-hover:opacity-20 transition duration-1000"></div>
           <div className="relative glass rounded-3xl overflow-hidden aspect-[4/5] scanline">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
+              src="/profile.jpg"
               alt="Sushrutha S Kottary"
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
             />
           </div>
         </motion.div>
@@ -46,8 +46,9 @@ const About: React.FC = () => {
 
           <div className="pt-4">
             <a
-              href="/resume.pdf"
-              download
+              href="/Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-slate-900 dark:bg-white text-white dark:text-black px-8 py-3 rounded-full font-bold text-sm shadow-xl shadow-brand-cyan/10 hover:shadow-brand-cyan/30 transform hover:-translate-y-1 transition-all"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

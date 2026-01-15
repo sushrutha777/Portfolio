@@ -4,10 +4,9 @@ import { motion } from 'framer-motion';
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="scroll-mt-24">
+    <section id="experience" className="scroll-mt-24 py-10 md:py-16">
       <div className="text-center mb-16">
-        <h2 className="text-sm font-bold text-brand-cyan tracking-[0.3em] uppercase mb-4">The Journey</h2>
-        <h3 className="text-4xl font-display font-extrabold text-slate-900 dark:text-white">Work Experience</h3>
+        <h3 className="text-4xl font-display font-extrabold text-brand-cyan">Work Experience</h3>
       </div>
 
       <div className="relative max-w-4xl mx-auto">
@@ -30,7 +29,7 @@ const Experience: React.FC = () => {
               <div className="bg-slate-100 dark:bg-white/10 px-4 py-1.5 rounded-full text-[10px] font-bold text-slate-500 uppercase tracking-widest self-start">Job Simulation</div>
             </div>
 
-            <p className="text-brand-purple font-semibold text-sm mb-4">Data Science Simulation Lead</p>
+            <p className="text-brand-purple font-semibold text-sm mb-4">Data Science Intern</p>
             <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-400">
               <li className="flex gap-2">
                 <span className="text-brand-cyan">•</span>

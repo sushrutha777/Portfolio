@@ -8,6 +8,7 @@ import Skills from './components/Skills.tsx';
 import Experience from './components/Experience.tsx';
 import Projects from './components/Projects.tsx';
 import Certifications from './components/Certifications.tsx';
+import Achievements from './components/Achievements.tsx';
 import Contact from './components/Contact.tsx';
 import Footer from './components/Footer.tsx';
 
@@ -48,13 +49,14 @@ const App: React.FC = () => {
 
       <main className="relative">
         <Hero />
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 space-y-32 py-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <About />
           <Education />
           <Skills />
           <Experience />
           <Projects />
           <Certifications />
+          <Achievements />
           <Contact />
         </div>
       </main>
