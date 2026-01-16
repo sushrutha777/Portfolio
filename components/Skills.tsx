@@ -39,7 +39,7 @@ const Skills: React.FC = () => {
   return (
     <section id="skills" className="scroll-mt-24 py-10 md:py-16">
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-display font-extrabold text-brand-cyan">Technical Skills</h2>
+        <h2 className="text-4xl font-display font-extrabold text-brand-teal">Technical Skills</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -58,7 +58,7 @@ const Skills: React.FC = () => {
             </div>
             <div className="flex flex-wrap gap-2">
               {cat.skills.map(skill => (
-                <span key={skill} className="px-4 py-2 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-brand-cyan dark:hover:text-brand-cyan transition-colors cursor-default">
+                <span key={skill} className="px-4 py-2 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-brand-teal dark:hover:text-brand-teal transition-colors cursor-default">
                   {skill}
                 </span>
               ))}

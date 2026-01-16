@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           <span className="">Sushrutha S Kottary.</span>
         </h1>
 
-        <p className="max-w-2xl mx-auto text-brand-cyan dark:text-brand-cyan text-lg md:text-xl mb-12 leading-relaxed font-medium">
+        <p className="max-w-2xl mx-auto text-brand-teal dark:text-brand-teal text-lg md:text-xl mb-12 leading-relaxed font-medium">
           Computer Science and Data Science student focused on applying machine learning, data science, and generative AI concepts through hands on projects.
         </p>
 
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             href="#projects"
-            className="w-full sm:w-auto bg-slate-900 dark:bg-white text-white dark:text-black px-10 py-4 rounded-full font-bold text-sm shadow-2xl hover:shadow-brand-cyan/20 transition-all"
+            className="w-full sm:w-auto bg-slate-900 dark:bg-white text-white dark:text-black px-10 py-4 rounded-full font-bold text-sm shadow-2xl hover:shadow-brand-teal/20 transition-all"
           >
             Explore Projects
           </motion.a>
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
         }}
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 text-slate-400 hover:text-brand-cyan transition-colors cursor-pointer z-20"
+        className="absolute bottom-12 left-1/2 -translate-x-1/2 text-slate-400 hover:text-brand-teal transition-colors cursor-pointer z-20"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />

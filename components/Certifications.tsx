@@ -33,7 +33,7 @@ const Certifications: React.FC = () => {
   return (
     <section id="certifications" className="scroll-mt-24 py-10 md:py-16">
       <div className="mb-12">
-        <h2 className="text-4xl font-display font-extrabold text-brand-cyan">Certificates</h2>
+        <h2 className="text-4xl font-display font-extrabold text-brand-teal">Certificates</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -53,7 +53,7 @@ const Certifications: React.FC = () => {
               href={cert.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 text-[10px] font-bold text-slate-500 uppercase tracking-widest flex items-center gap-2 group-hover:text-brand-cyan transition-colors"
+              className="mt-8 text-[10px] font-bold text-slate-500 uppercase tracking-widest flex items-center gap-2 group-hover:text-brand-teal transition-colors"
             >
               Verify Credential
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>

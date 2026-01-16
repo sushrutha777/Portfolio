@@ -60,12 +60,12 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="scroll-mt-24 py-12 md:py-20">
       <div className="glass rounded-[2rem] md:rounded-[3rem] p-6 md:p-20 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-brand-cyan/10 blur-[120px] rounded-full"></div>
-        <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-brand-purple/10 blur-[120px] rounded-full"></div>
+        <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-brand-teal/10 blur-[120px] rounded-full"></div>
+        <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-brand-blue/10 blur-[120px] rounded-full"></div>
 
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20">
           <div>
-            <h2 className="text-5xl font-display font-extrabold text-brand-cyan mb-8">CONTACT ME</h2>
+            <h2 className="text-4xl font-display font-extrabold text-brand-teal mb-8">CONTACT ME</h2>
 
             <p className="text-slate-600 dark:text-slate-400 text-lg mb-12 max-w-md">
               Actively seeking roles in Data Science, ML, and Generative AI, with a strong interest in building intelligent, data driven solutions.
@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-cyan outline-none transition-all"
+                    className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-teal outline-none transition-all"
                   />
                 </div>
                 <div>
@@ -98,7 +98,7 @@ const Contact: React.FC = () => {
                     placeholder="10-digit number"
                     value={formData.phone}
                     onChange={handlePhoneChange}
-                    className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-cyan outline-none transition-all"
+                    className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-teal outline-none transition-all"
                   />
                 </div>
               </div>
@@ -109,7 +109,7 @@ const Contact: React.FC = () => {
                   placeholder="Company Name"
                   value={formData.company}
                   onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                  className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-cyan outline-none transition-all"
+                  className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-teal outline-none transition-all"
                 />
               </div>
               <div>
@@ -119,7 +119,7 @@ const Contact: React.FC = () => {
                   placeholder="Your Location"
                   value={formData.location}
                   onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                  className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-cyan outline-none transition-all"
+                  className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-teal outline-none transition-all"
                 />
               </div>
               <div>
@@ -129,7 +129,7 @@ const Contact: React.FC = () => {
                   placeholder="Your message here..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-cyan outline-none transition-all resize-none"
+                  className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-teal outline-none transition-all resize-none"
                 ></textarea>
               </div>
 
@@ -159,7 +159,7 @@ const Contact: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-brand-cyan dark:bg-white text-black font-black uppercase tracking-widest py-5 rounded-2xl shadow-xl hover:scale-[1.02] active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-brand-teal dark:bg-white text-black font-black uppercase tracking-widest py-5 rounded-2xl shadow-xl hover:scale-[1.02] active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? 'Sending...' : 'Send'}
               </button>
@@ -174,10 +174,10 @@ const Contact: React.FC = () => {
 const ContactLink = ({ icon, label, value, href }: { icon: string; label: string; value: string; href?: string }) => {
   const content = (
     <div className={`flex items-center gap-4 ${href ? 'group cursor-pointer' : ''}`}>
-      <div className="w-12 h-12 glass rounded-2xl flex items-center justify-center text-xl group-hover:bg-brand-cyan/10 transition-colors shrink-0">{icon}</div>
+      <div className="w-12 h-12 glass rounded-2xl flex items-center justify-center text-xl group-hover:bg-brand-teal/10 transition-colors shrink-0">{icon}</div>
       <div>
         <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">{label}</div>
-        <div className={`text-slate-900 dark:text-slate-200 font-bold ${href ? 'group-hover:text-brand-cyan transition-colors' : ''}`}>{value}</div>
+        <div className={`text-slate-900 dark:text-slate-200 font-bold ${href ? 'group-hover:text-brand-teal transition-colors' : ''}`}>{value}</div>
       </div>
     </div>
   );

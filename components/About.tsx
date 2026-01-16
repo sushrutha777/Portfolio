@@ -12,7 +12,7 @@ const About: React.FC = () => {
           viewport={{ once: true }}
           className="relative group"
         >
-          <div className="absolute -inset-4 bg-gradient-to-tr from-brand-cyan to-brand-purple rounded-3xl blur-2xl opacity-10 group-hover:opacity-20 transition duration-1000"></div>
+          <div className="absolute -inset-4 bg-gradient-to-tr from-brand-teal to-brand-blue rounded-3xl blur-2xl opacity-10 group-hover:opacity-20 transition duration-1000"></div>
           <div className="relative glass rounded-3xl overflow-hidden aspect-[4/5] scanline">
             <img
               src="/profile.jpg"
@@ -29,7 +29,7 @@ const About: React.FC = () => {
           className="space-y-8"
         >
           <div>
-            <h2 className="text-base font-bold text-brand-cyan tracking-[0.3em] uppercase mb-4">The Engineer</h2>
+            <h2 className="text-base font-bold text-brand-teal tracking-[0.3em] uppercase mb-4">The Engineer</h2>
             <h3 className="text-4xl font-display font-extrabold text-slate-900 dark:text-white leading-tight">
               ML • Data Science • Generative AI
             </h3>
@@ -49,7 +49,7 @@ const About: React.FC = () => {
               href="/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-slate-900 dark:bg-white text-white dark:text-black px-8 py-3 rounded-full font-bold text-sm shadow-xl shadow-brand-cyan/10 hover:shadow-brand-cyan/30 transform hover:-translate-y-1 transition-all"
+              className="inline-flex items-center gap-2 bg-slate-900 dark:bg-white text-white dark:text-black px-8 py-3 rounded-full font-bold text-sm shadow-xl shadow-brand-teal/10 hover:shadow-brand-teal/30 transform hover:-translate-y-1 transition-all"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />

@@ -44,7 +44,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen font-sans selection:bg-brand-cyan/20">
+    <div className="min-h-screen font-sans selection:bg-brand-teal/20">
       <Navbar isScrolled={isScrolled} theme={theme} toggleTheme={toggleTheme} />
 
       <main className="relative">

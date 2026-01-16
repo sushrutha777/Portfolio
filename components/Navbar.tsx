@@ -62,7 +62,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled, theme, toggleTheme }) => {
                 key={item.id}
                 href={`#${item.id}`}
                 onClick={(e) => handleNavClick(e, item.id)}
-                className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest hover:text-brand-cyan dark:hover:text-brand-cyan transition-colors"
+                className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest hover:text-brand-teal dark:hover:text-brand-teal transition-colors"
               >
                 {item.label}
               </a>
@@ -95,7 +95,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled, theme, toggleTheme }) => {
                     exit={{ y: -20, opacity: 0, rotate: 90 }}
                     transition={{ duration: 0.3, ease: "backOut" }}
                   >
-                    <svg className="w-5 h-5 text-brand-purple" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
                     </svg>
                   </motion.div>
@@ -134,7 +134,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled, theme, toggleTheme }) => {
                     exit={{ y: -20, opacity: 0, rotate: 90 }}
                     transition={{ duration: 0.3, ease: "backOut" }}
                   >
-                    <svg className="w-5 h-5 text-brand-purple" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
                     </svg>
                   </motion.div>
@@ -179,7 +179,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled, theme, toggleTheme }) => {
               key={item.id}
               href={`#${item.id}`}
               onClick={(e) => handleNavClick(e, item.id)}
-              className="text-sm font-bold text-slate-600 dark:text-slate-300 uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors"
+              className="text-sm font-bold text-slate-600 dark:text-slate-300 uppercase tracking-[0.2em] hover:text-brand-teal transition-colors"
             >
               {item.label}
             </a>

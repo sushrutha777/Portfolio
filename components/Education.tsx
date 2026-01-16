@@ -30,7 +30,7 @@ const Education: React.FC = () => {
   return (
     <section id="education" className="scroll-mt-24 py-10 md:py-16">
       <div className="text-center mb-16">
-        <h3 className="text-4xl font-display font-extrabold text-brand-cyan">Education Path</h3>
+        <h3 className="text-4xl font-display font-extrabold text-brand-teal">Education Path</h3>
       </div>
 
       <div className="max-w-4xl mx-auto space-y-12">
@@ -41,17 +41,17 @@ const Education: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="group glass p-5 md:p-8 rounded-[2rem] md:rounded-[2.5rem] border-slate-200 dark:border-white/5 hover:border-brand-cyan/20 transition-all flex flex-col md:flex-row gap-6 items-start"
+            className="group glass p-5 md:p-8 rounded-[2rem] md:rounded-[2.5rem] border-slate-200 dark:border-white/5 hover:border-brand-teal/20 transition-all flex flex-col md:flex-row gap-6 items-start"
           >
 
             <div className="flex-1 w-full">
               <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 md:gap-2 mb-4">
                 <div>
                   <h4 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white leading-tight mb-1">{edu.school}</h4>
-                  <p className="text-brand-purple font-semibold text-sm md:text-base">{edu.degree}</p>
+                  <p className="text-brand-blue font-semibold text-sm md:text-base">{edu.degree}</p>
                 </div>
                 <div className="text-left md:text-right shrink-0">
-                  <span className="text-brand-cyan text-xs font-bold uppercase tracking-widest block mb-1">{edu.period}</span>
+                  <span className="text-brand-teal text-xs font-bold uppercase tracking-widest block mb-1">{edu.period}</span>
                   <span className="text-slate-500 text-xs font-medium block">{edu.location}</span>
                 </div>
               </div>
