@@ -6,7 +6,7 @@ const Certifications: React.FC = () => {
   const certs = [
     {
       title: "IBM RAG & Agentic AI Professional Certificate",
-      link: "#"
+      link: "https://www.coursera.org/account/accomplishments/professional-cert/5QFWX5VUMM44"
     },
     {
       title: "Ultimate RAG Bootcamp (LangChain, LangGraph)",
