@@ -17,7 +17,7 @@ const Skills: React.FC = () => {
     {
       title: "Generative AI",
       icon: "🤖",
-      skills: ["RAG", "ReAct Agents & Tool", "LLM Integration", "LangChain", "LangGraph", "Embeddings & Vector Stores"]
+      skills: ["RAG", "ReAct Agents & Tools", "LLM Integration", "LangChain", "LangGraph", "Embeddings & Vector Stores"]
     },
     {
       title: "Data Analysis & Visualization",
