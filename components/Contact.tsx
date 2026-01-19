@@ -92,7 +92,7 @@ const Contact: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2 block">Phone Number</label>
+                  <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2 block">Contact Number</label>
                   <input
                     type="tel"
                     placeholder="10-digit number"
@@ -126,7 +126,7 @@ const Contact: React.FC = () => {
                 <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2 block">Message</label>
                 <textarea
                   rows={4}
-                  placeholder="Your message here..."
+                  placeholder="Write here..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-teal outline-none transition-all resize-none"

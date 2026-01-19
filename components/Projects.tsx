@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
       title: 'Stock Movement Reason Finder',
       description: 'Market analysis Machine Learning tool that analyzes NIFTY100 stock movements explaining price spikes.',
       challenge: 'Aggregating noisy news data into coherent, actionable financial insights.',
-      solution: 'Integrated Google News RSS + Gemini AI for real-time news reasoning.',
+      solution: 'Integrated Google News RSS + Gemini AI for real time news reasoning.',
       tags: ['Gemini API', 'Finance', 'News RSS', 'Python'],
       codeLink: 'https://github.com/sushrutha777/Stock_Movement_Reason_Finder',
       liveLink: 'https://stock-movement-reason-finder.streamlit.app/',
@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
       title: 'Multi-Language Invoice Q&A',
       description: 'AI-powered Computer Vision app that converts invoices into insights without OCR.',
       challenge: 'Handling multi-lingual complex layouts without traditional slow OCR pipelines.',
-      solution: 'Used Gemini 2.5 Flash to direct-analyze PNG bytes for rapid data extraction.',
+      solution: 'Used Gemini 2.5 Flash to direct analyze PNG bytes for rapid data extraction.',
       tags: ['Gemini 2.5 Flash', 'Computer Vision', 'NLP'],
       codeLink: 'https://github.com/sushrutha777/Multi-Language-Invoice-Extractor',
       liveLink: 'https://multi-language-invoice-extractor-by-sushrutha-s-kottary.streamlit.app/',
@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
     {
       id: 'sentiment',
       title: 'Movie Review Sentiment Analysis',
-      description: 'NLP Machine Learning project using a fine-tuned DistilBERT model to classify reviews.',
+      description: 'NLP Machine Learning project using a fine tuned DistilBERT model to classify reviews.',
       challenge: 'Achieving 92% test accuracy with robust tokenization using Hugging Face Transformers.',
       solution: 'Displays predictions with confidence scores for better interpretability.',
       tags: ['DistilBERT', 'Hugging Face', 'NLP', 'Sentiment Analysis'],
@@ -92,7 +92,7 @@ const Projects: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
                 <div>
                   <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Challenge</div>
-                  <div className="text-sm text-slate-700 dark:text-slate-300 italic">"{p.challenge}"</div>
+                  <div className="text-sm text-slate-700 dark:text-slate-300">{p.challenge}</div>
                 </div>
                 <div>
                   <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Architectural Fix</div>

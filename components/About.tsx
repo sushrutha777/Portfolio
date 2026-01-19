@@ -40,7 +40,7 @@ const About: React.FC = () => {
               Hi, I’m <span className="text-slate-900 dark:text-white font-semibold">Sushrutha S Kottary</span>, a 3rd year Computer Science and Data Science student at RNS Institute of Technology. I’m passionate about using data and machine learning to solve real world problems and drive meaningful impact.
             </p>
             <p>
-              My interests span machine learning, deep learning, and **Gen AI**, with a strong focus on building **Agentic AI Systems**. As an **AI Developer**, I enjoy exploring how these technologies can be applied in practical and innovative ways to build intelligent, scalable solutions.
+              My interests span machine learning, deep learning and Gen AI with a strong focus on building Agentic AI Systems. As an AI Developer, I enjoy exploring how these technologies can be applied in practical and innovative ways to build intelligent, scalable solutions.
             </p>
           </div>
 
