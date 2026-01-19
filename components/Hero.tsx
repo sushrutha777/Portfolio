@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
 
         <h1 className="text-5xl md:text-7xl font-display font-extrabold mb-6 leading-[1.1] tracking-tight text-slate-900 dark:text-white">
           Hey, I am <br />
-          <span className="">Sushrutha S Kottary.</span>
+          <span>Sushrutha S Kottary.</span>
         </h1>
 
         <p className="max-w-2xl mx-auto text-brand-teal dark:text-brand-teal text-lg md:text-xl mb-12 leading-relaxed font-medium">

@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
     {
       id: 'rag',
       title: 'End-to-End Agentic RAG',
-      description: 'Built an agentic system supporting PDFs, text files, and website URLs.',
+      description: 'Built a Data Science agentic system supporting PDFs, text files, and website URLs.',
       challenge: 'Creating a grounded reasoning engine that switches tools based on query intent.',
       solution: 'Designed a ReAct agent using LangChain + LangGraph with Gemini 2.5 integration.',
       tags: ['LangChain', 'LangGraph', 'Gemini AI', 'Streamlit'],
@@ -19,7 +19,7 @@ const Projects: React.FC = () => {
     {
       id: 'stock',
       title: 'Stock Movement Reason Finder',
-      description: 'Analyzes NIFTY100 stock movements explaining price spikes with real-time news.',
+      description: 'Market analysis Machine Learning tool that analyzes NIFTY100 stock movements explaining price spikes.',
       challenge: 'Aggregating noisy news data into coherent, actionable financial insights.',
       solution: 'Integrated Google News RSS + Gemini AI for real-time news reasoning.',
       tags: ['Gemini API', 'Finance', 'News RSS', 'Python'],
@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
     {
       id: 'invoice',
       title: 'Multi-Language Invoice Q&A',
-      description: 'Converts invoices into insights without OCR, supporting global languages.',
+      description: 'AI-powered Computer Vision app that converts invoices into insights without OCR.',
       challenge: 'Handling multi-lingual complex layouts without traditional slow OCR pipelines.',
       solution: 'Used Gemini 2.5 Flash to direct-analyze PNG bytes for rapid data extraction.',
       tags: ['Gemini 2.5 Flash', 'Computer Vision', 'NLP'],
@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
     {
       id: 'sentiment',
       title: 'Movie Review Sentiment Analysis',
-      description: 'Built a Streamlit app using a fine-tuned DistilBERT model to classify reviews as Positive or Negative.',
+      description: 'NLP Machine Learning project using a fine-tuned DistilBERT model to classify reviews.',
       challenge: 'Achieving 92% test accuracy with robust tokenization using Hugging Face Transformers.',
       solution: 'Displays predictions with confidence scores for better interpretability.',
       tags: ['DistilBERT', 'Hugging Face', 'NLP', 'Sentiment Analysis'],
@@ -70,7 +70,7 @@ const Projects: React.FC = () => {
               <img
                 src={p.image}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100"
-                alt={p.title}
+                alt={`${p.title} - Sushrutha Data Science Portfolio`}
               />
 
             </div>

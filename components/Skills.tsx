@@ -6,32 +6,26 @@ const Skills: React.FC = () => {
   const categories = [
     {
       title: "Languages & Databases",
-      icon: "💻",
       skills: ["Python", "R", "C", "SQL", "MySQL", "MongoDB", "Firebase"]
     },
     {
       title: "ML, DL & NLP",
-      icon: "🧠",
       skills: ["Supervised/Unsupervised Learning", "Neural Networks", "CNN", "RNN", "LSTM", "GRU", "Model Evaluation", "Feature Engineering", "Hyperparameter Tuning", "Model Deployment"]
     },
     {
       title: "Generative AI",
-      icon: "🤖",
       skills: ["RAG", "ReAct Agents & Tools", "LLM Integration", "LangChain", "LangGraph", "Embeddings & Vector Stores"]
     },
     {
       title: "Data Analysis & Visualization",
-      icon: "📊",
       skills: ["EDA", "Data Cleaning", "Matplotlib", "Seaborn", "Tableau", "PowerBI"]
     },
     {
       title: "Libraries & Platforms",
-      icon: "📚",
       skills: ["Pandas", "NumPy", "Scikit-Learn", "TensorFlow", "Jupyter Notebook", "Google Colab", "VS Code", "Google Antigravity"]
     },
     {
       title: "Version Control",
-      icon: "🔧",
       skills: ["Git", "GitHub"]
     }
   ];
@@ -52,8 +46,7 @@ const Skills: React.FC = () => {
             viewport={{ once: true }}
             className="group glass p-8 rounded-[2rem] hover-3d border-slate-200 dark:border-white/5"
           >
-            <div className="flex items-center gap-4 mb-8">
-
+            <div className="mb-6">
               <h4 className="text-xl font-bold text-slate-900 dark:text-white">{cat.title}</h4>
             </div>
             <div className="flex flex-wrap gap-2">
