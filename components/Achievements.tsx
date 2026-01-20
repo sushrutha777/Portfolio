@@ -36,11 +36,15 @@ const Achievements: React.FC = () => {
                     <ul className="space-y-4 text-slate-600 dark:text-slate-400">
                         <li className="flex gap-3">
                             <span className="mt-1.5">•</span>
-                            <span>Developed a production ready fish delivery web application with seamless guest checkout and cash on delivery, eliminating user login friction.</span>
+                            <span>Developed a production ready fish delivery web application for a local fish business, featuring guest checkout and cash on delivery.</span>
                         </li>
                         <li className="flex gap-3">
                             <span className="mt-1.5">•</span>
-                            <span>Implemented a serverless, real time architecture using React and Firebase Firestore, with AI-assisted development via Google Antigravity to accelerate design and development.</span>
+                            <span>Built using an AI driven development workflow with Google Antigravity, enabling real time order status updates and admin controlled workflows.</span>
+                        </li>
+                        <li className="flex gap-3">
+                            <span className="mt-1.5">•</span>
+                            <span>Implemented using a serverless architecture with React and Firebase Firestore.</span>
                         </li>
                     </ul>
                 </motion.div>

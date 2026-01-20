@@ -31,7 +31,7 @@ const About: React.FC = () => {
           <div>
             <h2 className="text-base font-bold text-brand-teal tracking-[0.3em] uppercase mb-4">The Engineer</h2>
             <h3 className="text-4xl font-display font-extrabold text-slate-900 dark:text-white leading-tight">
-              ML • Data Science • Generative AI
+              ML <span className="text-2xl align-middle px-1">•</span> Data Science <span className="text-2xl align-middle px-1">•</span> Generative AI
             </h3>
           </div>
 

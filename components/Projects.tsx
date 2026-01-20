@@ -5,6 +5,7 @@ import { Project } from '../types';
 
 const Projects: React.FC = () => {
   const projects: Project[] = [
+
     {
       id: 'rag',
       title: 'End-to-End Agentic RAG',
@@ -19,9 +20,9 @@ const Projects: React.FC = () => {
     {
       id: 'stock',
       title: 'Stock Movement Reason Finder',
-      description: 'Market analysis Machine Learning tool that analyzes NIFTY100 stock movements explaining price spikes.',
-      challenge: 'Aggregating noisy news data into coherent, actionable financial insights.',
-      solution: 'Integrated Google News RSS + Gemini AI for real time news reasoning.',
+      description: 'Developed a tool to analyze NIFTY 100 stocks and generate AI driven explanations for their price movements.',
+      challenge: 'Standard tracking misses the full picture, and reading many individual news headlines is confusing.',
+      solution: 'Combines the top 5 news headlines into one clear summary for Gemini to generate an easy to understand explanation.',
       tags: ['Gemini API', 'Finance', 'News RSS', 'Python'],
       codeLink: 'https://github.com/sushrutha777/Stock_Movement_Reason_Finder',
       liveLink: 'https://stock-movement-reason-finder.streamlit.app/',
@@ -30,8 +31,8 @@ const Projects: React.FC = () => {
     {
       id: 'invoice',
       title: 'Multi-Language Invoice Q&A',
-      description: 'AI-powered Computer Vision app that converts invoices into insights without OCR.',
-      challenge: 'Handling multi-lingual complex layouts without traditional slow OCR pipelines.',
+      description: 'Multimodal AI application where users upload invoices (PDF/Images) and ask questions directly from the document context.',
+      challenge: 'Converting diverse document formats (PDFs, images) into Gemini compatible PNG byte streams for seamless processing.',
       solution: 'Used Gemini 2.5 Flash to direct analyze PNG bytes for rapid data extraction.',
       tags: ['Gemini 2.5 Flash', 'Computer Vision', 'NLP'],
       codeLink: 'https://github.com/sushrutha777/Multi-Language-Invoice-Extractor',

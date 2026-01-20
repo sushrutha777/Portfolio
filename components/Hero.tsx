@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="mailto:sushruthaskottary777@gmail.com"
+            href="#contact"
             className="w-full sm:w-auto glass text-slate-900 dark:text-white px-10 py-4 rounded-full font-bold text-sm border-slate-200 dark:border-white/10 hover:bg-white/5 transition-all"
           >
             Get In Touch
