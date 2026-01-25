@@ -27,7 +27,3 @@ export interface Certification {
   link: string;
 }
 
-export interface ChatMessage {
-  role: 'user' | 'assistant';
-  content: string;
-}

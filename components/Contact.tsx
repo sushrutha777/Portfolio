@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { db } from '../firebase';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
+    email: '',
     phone: '',
     company: '',
     location: '',
@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
 
     setError('');
 
-    if (!formData.name || !formData.phone || !formData.company || !formData.location || !formData.message) {
+    if (!formData.name || !formData.email || !formData.phone || !formData.company || !formData.location || !formData.message) {
       setError('Please fill in all fields.');
       return;
     }
@@ -34,18 +34,30 @@ const Contact: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      await addDoc(collection(db, 'messages'), {
-        ...formData,
-        timestamp: serverTimestamp()
+      const response = await fetch("https://formspree.io/f/xwvldvek", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(formData),
       });
 
-      setIsSubmitted(true);
-      setFormData({ name: '', phone: '', company: '', location: '', message: '' });
-
-      // Reset message after 5 seconds
-      setTimeout(() => setIsSubmitted(false), 5000);
+      if (response.ok) {
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', phone: '', company: '', location: '', message: '' });
+        // Reset message after 5 seconds
+        setTimeout(() => setIsSubmitted(false), 5000);
+      } else {
+        const data = await response.json();
+        if (Object.hasOwn(data, 'errors')) {
+          setError(data.errors.map((err: any) => err.message).join(", "));
+        } else {
+          setError('Something went wrong. Please try again later.');
+        }
+      }
     } catch (err) {
-      console.error("Error adding document: ", err);
+      console.error("Error submitting form: ", err);
       setError('Something went wrong. Please try again later.');
     } finally {
       setIsSubmitting(false);
@@ -86,50 +98,74 @@ const Contact: React.FC = () => {
                   <input
                     type="text"
                     placeholder="Your Name"
+                    name="name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-teal outline-none transition-all"
+                    required
                   />
                 </div>
+                <div>
+                  <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2 block">Email</label>
+                  <input
+                    type="email"
+                    placeholder="your@email.com"
+                    name="email"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-teal outline-none transition-all"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2 block">Contact Number</label>
                   <input
                     type="tel"
                     placeholder="10-digit number"
+                    name="phone"
                     value={formData.phone}
                     onChange={handlePhoneChange}
                     className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-teal outline-none transition-all"
                   />
                 </div>
+                <div>
+                  <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2 block">Company</label>
+                  <input
+                    type="text"
+                    placeholder="Company Name"
+                    name="company"
+                    value={formData.company}
+                    onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                    className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-teal outline-none transition-all"
+                  />
+                </div>
               </div>
-              <div>
-                <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2 block">Company</label>
-                <input
-                  type="text"
-                  placeholder="Company Name"
-                  value={formData.company}
-                  onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                  className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-teal outline-none transition-all"
-                />
-              </div>
+
               <div>
                 <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2 block">Location</label>
                 <input
                   type="text"
                   placeholder="Your Location"
+                  name="location"
                   value={formData.location}
                   onChange={(e) => setFormData({ ...formData, location: e.target.value })}
                   className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-teal outline-none transition-all"
                 />
               </div>
+
               <div>
                 <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2 block">Message</label>
                 <textarea
                   rows={4}
                   placeholder="Write here..."
+                  name="message"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-brand-teal outline-none transition-all resize-none"
+                  required
                 ></textarea>
               </div>
 
