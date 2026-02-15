@@ -19,7 +19,7 @@ const Achievements: React.FC = () => {
                         <div>
                             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">Fish Delivery Web Application</h3>
                             <a
-                                href="https://macchikart-98228.web.app/"
+                                href="https://macchikart.in"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 text-brand-teal font-bold text-sm hover:underline"

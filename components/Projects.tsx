@@ -9,8 +9,8 @@ const Projects: React.FC = () => {
     {
       id: 'rag',
       title: 'End-to-End Agentic RAG',
-      description: 'Built a Data Science agentic system supporting PDFs, text files, and website URLs.',
-      challenge: 'Creating a grounded reasoning engine that switches tools based on query intent.',
+      description: 'Built an agentic RAG system supporting PDFs, text files, and website URLs.',
+      challenge: 'Developed a grounded reasoning engine that dynamically selects tools using query intent vector search, Wikipedia, and web search.',
       solution: 'Designed a ReAct agent using LangChain + LangGraph with Gemini 2.5 integration.',
       tags: ['LangChain', 'LangGraph', 'Gemini AI', 'Streamlit'],
       codeLink: 'https://github.com/sushrutha777/AgenticRAG-with-Web-Search-and-Document-Search',
