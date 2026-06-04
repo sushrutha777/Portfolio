@@ -10,13 +10,14 @@ const Experience: React.FC = () => {
       </div>
 
       <div className="relative max-w-4xl mx-auto">
-        <div className="absolute left-6 md:left-1/2 -ml-[1px] w-[2px] h-full bg-slate-200 dark:bg-slate-800"></div>
-
+        <div className="hidden md:block absolute left-6 md:left-1/2 -ml-[1px] w-[2px] h-full bg-slate-200 dark:bg-slate-800"></div>
+        
+        <div className="flex overflow-x-auto hide-scrollbar snap-x snap-mandatory gap-6 pb-6 md:block md:overflow-visible md:pb-0 md:snap-none">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="relative pl-14 md:pl-0 md:pr-1/2 mb-20 group"
+          className="w-[85vw] sm:w-[400px] md:w-full shrink-0 snap-center relative md:pl-0 md:pr-1/2 md:mb-20 group"
         >
 
 
@@ -46,6 +47,7 @@ const Experience: React.FC = () => {
             </ul>
           </div>
         </motion.div>
+        </div>
       </div>
     </section>
   );

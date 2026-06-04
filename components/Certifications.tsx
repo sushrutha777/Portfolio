@@ -3,6 +3,29 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const Certifications: React.FC = () => {
+  const carouselRef = React.useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (carouselRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
+      const maxScroll = scrollWidth - clientWidth;
+      
+      if (direction === 'left') {
+        if (scrollLeft <= 0) {
+          carouselRef.current.scrollTo({ left: maxScroll, behavior: 'smooth' });
+        } else {
+          carouselRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+        }
+      } else {
+        if (scrollLeft >= maxScroll - 10) {
+          carouselRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          carouselRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+        }
+      }
+    }
+  };
+
   const certs = [
     {
       title: "IBM RAG & Agentic AI Professional Certificate",
@@ -32,11 +55,20 @@ const Certifications: React.FC = () => {
 
   return (
     <section id="certifications" className="scroll-mt-24 py-10 md:py-16">
-      <div className="mb-12">
+      <div className="text-center md:text-left mb-12">
         <h2 className="text-4xl font-display font-extrabold text-brand-teal">Certificates</h2>
+        <div className="md:hidden mt-4 flex items-center justify-center gap-4 text-sm text-slate-500 dark:text-slate-400 font-medium">
+          <button onClick={() => scroll('left')} className="p-2 bg-slate-100 dark:bg-white/5 rounded-full hover:bg-slate-200 dark:hover:bg-white/10 transition-colors active:scale-95" aria-label="Scroll left">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+          </button>
+          <span className="animate-pulse">Swipe</span>
+          <button onClick={() => scroll('right')} className="p-2 bg-slate-100 dark:bg-white/5 rounded-full hover:bg-slate-200 dark:hover:bg-white/10 transition-colors active:scale-95" aria-label="Scroll right">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+          </button>
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div ref={carouselRef} className="flex overflow-x-auto hide-scrollbar snap-x snap-mandatory gap-6 pb-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0 md:snap-none">
         {certs.map((cert, idx) => (
           <motion.div
             key={idx}
@@ -44,7 +76,7 @@ const Certifications: React.FC = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             whileHover={{ y: -5 }}
-            className="glass p-6 rounded-2xl border-slate-200 dark:border-white/5 flex flex-col justify-between group"
+            className="w-[85vw] sm:w-[400px] md:w-auto shrink-0 snap-center glass p-6 rounded-2xl border-slate-200 dark:border-white/5 flex flex-col justify-between group"
           >
             <div>
               <h4 className="text-slate-800 dark:text-slate-200 font-bold leading-snug">{cert.title}</h4>
