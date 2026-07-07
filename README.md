@@ -1,40 +1,22 @@
-# Sushrutha S Kottary - Portfolio
+# Sushrutha S Kottary | AI & ML Engineer Portfolio
 
-A modern, immersive portfolio website built to showcase my journey as a **Computer Science & Data Science student** specializing in **Machine Learning, Generative AI, and Data Analytics**.
+Welcome to the source code for my professional portfolio website!
 
-## 🚀 Live Demo
-[Live Site](https://sushrutha-s-kottary.web.app)
+## About Me
+I am a Data Scientist and Machine Learning Engineer based in Bengaluru, India, specializing in Generative AI, Deep Learning, and NLP. I have extensive experience building End-to-End MLOps pipelines and deploying Agentic RAG systems using modern AI frameworks.
 
-## ✨ Features
-- **3D Deep Space Background**: A custom Three.js starfield animation with depth effect.
-- **Modern UI/UX**: Built with React, Tailwind CSS, and Framer Motion for smooth transitions.
-- **Dark Mode Default**: A premium dark-themed aesthetic with a "Glassmorphism" feel.
-- **Responsive Design**: Fully optimized for all devices.
-- **Project Showcase**: distinct sections for Projects, Experience, and Certifications.
+## Live Website
+🌍 **[View My Portfolio Live](https://sushrutha-s-kottary.web.app/)**
 
-## 🛠️ Tech Stack
-- **Frontend**: React, TypeScript, Vite
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion, Three.js (Fiber/Drei)
-- **Deployment**: (Add deployment platform, e.g., Vercel/Netlify)
+## Tech Stack (Portfolio)
+This portfolio is built with a focus on a highly professional, minimalistic, and modern aesthetic.
+- **Framework:** Next.js 15 (App Router)
+- **Styling:** Tailwind CSS v4
+- **Animations:** Framer Motion & React Three Fiber (Particle Background)
+- **Icons:** Lucide React
 
-## 🏃‍♂️ Run Locally
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/sushrutha777/Portfolio.git
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-
-## 📬 Contact
-- **Email**: sushruthaskottary777@gmail.com
-- **LinkedIn**: [Sushrutha S Kottary](https://www.linkedin.com/in/sushrutha-s-kottary-994310291/)
+## Contact
+- **Email:** [sushruthaskottary777@gmail.com](mailto:sushruthaskottary777@gmail.com)
+- **LinkedIn:** [Sushrutha S Kottary](https://www.linkedin.com/in/sushrutha-s-kottary-994310291/)
+- **GitHub:** [@sushrutha777](https://github.com/sushrutha777)
+- **LeetCode:** [@Sushrutha_S_Kottary](https://leetcode.com/u/Sushrutha_S_Kottary/)

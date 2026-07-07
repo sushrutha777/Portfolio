@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-purple: #e2e8f0; /* Professional Slate White */
+  --color-brand-indigo: #cbd5e1; /* Professional Light Slate */
+  --color-brand-blue: #94a3b8; /* Professional Muted Slate */
+  --color-brand-teal: #14b8a6; /* keeping teal just in case */
+  --color-glass-border: rgba(255, 255, 255, 0.05);
+  --color-glass-bg: rgba(255, 255, 255, 0.02);
+  --font-display: var(--font-outfit), var(--font-sans);
+}
+
+:root {
+  --background: #090909;
+  --foreground: #ededed;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: var(--color-glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-glass-border);
+}
+
+/* Hide scrollbar for clean UI */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(to right, var(--color-brand-purple), var(--color-brand-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
