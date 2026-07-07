@@ -45,7 +45,8 @@ export default function Navbar() {
                   layoutId="navbar-indicator"
                   className="absolute -bottom-2 w-1.5 h-1.5 rounded-full bg-slate-300"
                   initial={false}
-                  transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                  transition={{ type: "spring", stiffness: 500, damping: 25, mass: 0.5 }}
+                  style={{ transformOrigin: "center" }}
                 />
               )}
             </Link>

@@ -3,7 +3,7 @@ import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import ParticleBackground from "@/components/ui/ParticleBackground";
+import ParticleBackgroundWrapper from "@/components/ui/ParticleBackgroundWrapper";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -75,7 +75,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${outfit.variable} antialiased bg-[#090909] text-slate-200 selection:bg-brand-purple/30`}
       >
-        <ParticleBackground />
+        <ParticleBackgroundWrapper />
         <div className="relative z-10 flex flex-col min-h-screen">
           <Navbar />
           <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
