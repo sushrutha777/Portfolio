@@ -5,11 +5,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full border-t border-white/5 bg-[#090909] py-12 mt-20">
+    <footer className="w-full border-t border-white/5 bg-[#090909] py-8 mt-8">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex flex-col items-center md:items-start gap-2">
           <span className="text-2xl font-bold font-display text-white tracking-widest">
-            SSK.
+            Sushrutha S Kottary
           </span>
           <p className="text-slate-500 text-sm">
             © {currentYear} Sushrutha S Kottary. All rights reserved.

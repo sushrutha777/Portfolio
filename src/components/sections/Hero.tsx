@@ -27,7 +27,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-lg md:text-2xl text-slate-400 font-light max-w-2xl leading-relaxed">
-            I handcraft each line of code with the idea to solve problem.
+            Final year Data Science student with experience in AI, ML, and DL, crafting code to solve real-world problems.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
@@ -39,7 +39,7 @@ export default function Hero() {
             </Link>
             
             <a
-              href="/Resume.pdf"
+              href="/Sushrutha-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 rounded-full bg-[#151515] border border-white/10 hover:bg-[#202020] hover:border-brand-purple/30 transition-all text-white font-medium text-sm md:text-base group"

@@ -39,13 +39,13 @@ export default function Navbar() {
               }`}
               title={link.name}
             >
-              <link.icon size={20} strokeWidth={isActive ? 2.5 : 2} className="transition-all" />
+              <link.icon size={20} strokeWidth={isActive ? 2.5 : 2} className="transition-all duration-200" />
               {isActive && (
                 <motion.div
                   layoutId="navbar-indicator"
                   className="absolute -bottom-2 w-1.5 h-1.5 rounded-full bg-slate-300"
                   initial={false}
-                  transition={{ type: "spring", stiffness: 500, damping: 25, mass: 0.5 }}
+                  transition={{ type: "spring", stiffness: 700, damping: 20, mass: 0.3 }}
                   style={{ transformOrigin: "center" }}
                 />
               )}
