@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ParticleBackgroundWrapper from "@/components/ui/ParticleBackgroundWrapper";
+import SwipeNavigation from "@/components/ui/SwipeNavigation";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -79,7 +80,9 @@ export default function RootLayout({
         <div className="relative z-10 flex flex-col min-h-screen">
           <Navbar />
           <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            {children}
+            <SwipeNavigation>
+              {children}
+            </SwipeNavigation>
           </main>
           <Footer />
         </div>

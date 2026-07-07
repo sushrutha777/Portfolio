@@ -19,12 +19,12 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="fixed top-4 sm:top-6 left-1/2 -translate-x-1/2 z-50 w-[95vw] sm:w-auto max-w-2xl">
+    <div className="fixed top-4 sm:top-6 left-1/2 -translate-x-1/2 z-50 w-max max-w-[95vw] sm:max-w-2xl">
       <motion.nav
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="glass rounded-full px-6 py-3.5 flex items-center justify-start sm:justify-center gap-7 sm:gap-8 border border-white/5 shadow-2xl bg-[#151515]/90 backdrop-blur-md overflow-x-auto overflow-y-hidden"
+        className="glass rounded-full px-3 sm:px-6 py-3.5 flex items-center justify-start sm:justify-center gap-3 sm:gap-8 border border-white/5 shadow-2xl bg-[#151515]/90 backdrop-blur-md overflow-x-auto overflow-y-hidden"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         <style dangerouslySetInnerHTML={{ __html: `::-webkit-scrollbar { display: none; }` }} />
