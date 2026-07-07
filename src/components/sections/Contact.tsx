@@ -100,9 +100,9 @@ export default function Contact() {
                     <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-slate-300 group-hover:bg-brand-purple/20 group-hover:text-brand-purple transition-colors">
                       <Mail size={20} />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <div className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Email</div>
-                      <div className="text-white font-medium">sushruthaskottary777@gmail.com</div>
+                      <div className="text-white font-medium text-sm sm:text-base break-all">sushruthaskottary777@gmail.com</div>
                     </div>
                   </a>
                   <a href="https://www.linkedin.com/in/sushrutha-s-kottary-994310291/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">

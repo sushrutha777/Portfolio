@@ -19,31 +19,33 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
+    <div className="fixed top-4 sm:top-6 left-1/2 -translate-x-1/2 z-50 w-[95vw] sm:w-auto max-w-2xl">
       <motion.nav
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="glass rounded-full px-4 sm:px-8 py-3 flex items-center justify-center gap-4 sm:gap-8 border border-white/5 shadow-2xl bg-[#151515]/80 backdrop-blur-md"
+        className="glass rounded-full px-6 py-3.5 flex items-center justify-start sm:justify-center gap-7 sm:gap-8 border border-white/5 shadow-2xl bg-[#151515]/90 backdrop-blur-md overflow-x-auto overflow-y-hidden"
+        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
+        <style dangerouslySetInnerHTML={{ __html: `::-webkit-scrollbar { display: none; }` }} />
         {navLinks.map((link) => {
           const isActive = pathname === link.href || (link.href !== "/" && pathname?.startsWith(link.href));
           return (
             <Link
               key={link.name}
               href={link.href}
-              className={`transition-colors flex items-center justify-center p-1 relative ${
-                isActive ? "text-white" : "text-slate-500 hover:text-white"
+              className={`transition-colors flex items-center justify-center p-1.5 relative shrink-0 ${
+                isActive ? "text-white scale-110" : "text-slate-500 hover:text-white"
               }`}
               title={link.name}
             >
-              <link.icon size={18} strokeWidth={2.5} />
+              <link.icon size={20} strokeWidth={isActive ? 2.5 : 2} className="transition-all" />
               {isActive && (
                 <motion.div
                   layoutId="navbar-indicator"
-                  className="absolute -bottom-2 w-1.5 h-1.5 rounded-full bg-brand-purple"
+                  className="absolute -bottom-2 w-1.5 h-1.5 rounded-full bg-slate-300"
                   initial={false}
-                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 30 }}
                 />
               )}
             </Link>

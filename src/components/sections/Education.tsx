@@ -67,11 +67,11 @@ export default function Education() {
                 </div>
               </div>
               
-              <div className="flex flex-row md:flex-col items-center md:items-end justify-between md:justify-center gap-2 md:gap-4 ml-16 md:ml-0 border-t md:border-t-0 border-white/10 pt-4 md:pt-0">
-                <span className="text-slate-400 font-bold tracking-wider text-xs md:text-sm uppercase">
+              <div className="flex flex-col sm:flex-row md:flex-col items-start sm:items-center md:items-end justify-between md:justify-center gap-3 md:gap-4 ml-16 md:ml-0 border-t md:border-t-0 border-white/10 pt-4 md:pt-0">
+                <span className="text-slate-400 font-bold tracking-wider text-xs md:text-sm uppercase whitespace-nowrap">
                   {edu.period}
                 </span>
-                <span className="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold border border-emerald-500/20">
+                <span className="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold border border-emerald-500/20 whitespace-nowrap">
                   {edu.grade}
                 </span>
               </div>
