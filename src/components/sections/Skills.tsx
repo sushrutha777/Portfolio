@@ -10,8 +10,8 @@ const skillCategories = [
     color: "text-sky-400",
     skills: [
       { name: "Python", desc: "Primary language for ML & backend" },
-      { name: "SQL & NoSQL", desc: "MySQL, MongoDB, Firestore" },
-      { name: "R", desc: "Statistical computing & data analysis" }
+      { name: "R", desc: "Statistical computing & data analysis" },
+      { name: "SQL & NoSQL", desc: "MySQL, MongoDB, Firestore" }
     ]
   },
   {
