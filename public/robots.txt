@@ -1,3 +1,13 @@
+# Robots.txt for Sushrutha S Kottary Portfolio
+# https://sushrutha-s-kottary.web.app
+
 User-agent: *
 Allow: /
+Disallow: /_next/
+Disallow: /api/
+
+# Sitemap
 Sitemap: https://sushrutha-s-kottary.web.app/sitemap.xml
+
+# Crawl delay (optional, for polite crawling)
+Crawl-delay: 1
