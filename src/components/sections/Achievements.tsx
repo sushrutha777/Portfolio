@@ -48,13 +48,16 @@ export default function Achievements() {
               <div className="flex items-start gap-4">
                 <div className="flex flex-col">
                   <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Educational Institution Portfolio</h3>
-                  <div className="flex gap-4">
+                  <div className="flex flex-wrap gap-4">
                     <a href="https://www.baschoolandcollege.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 font-bold text-sm hover:text-white transition-colors">
                       BA School & College <ExternalLink size={14} />
                     </a>
+                    <a href="https://www.baitithumbay.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 font-bold text-sm hover:text-white transition-colors">
+                      BA ITI <ExternalLink size={14} />
+                    </a>
                   </div>
                   <p className="text-slate-300 text-sm mt-3 leading-relaxed">
-                    Developed and deployed a fully responsive portfolio website for an educational institution.
+                    Developed and deployed fully responsive portfolio websites for educational institutions.
                   </p>
                 </div>
               </div>
