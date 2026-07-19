@@ -20,6 +20,12 @@ const SITE_URL = "https://sushrutha-s-kottary.web.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  applicationName: "Sushrutha S Kottary",
+  appleWebApp: {
+    title: "Sushrutha S Kottary",
+    statusBarStyle: "default",
+    capable: true,
+  },
   title: {
     default: "Sushrutha S Kottary | Data Scientist & Generative AI Engineer",
     template: "%s | Sushrutha S Kottary",
@@ -27,8 +33,12 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Sushrutha S Kottary — Data Scientist, Machine Learning Engineer, and Generative AI Developer based in Bengaluru, India. Specializing in RAG, LangChain, LangGraph, Deep Learning, NLP, and end-to-end MLOps pipelines.",
   keywords: [
+    "Sushrutha",
+    "Kottary",
     "Sushrutha S Kottary",
     "Sushrutha Kottary",
+    "Sushrutha S",
+    "S Kottary",
     "Sushrutha S Kottary portfolio",
     "Data Scientist",
     "Machine Learning Engineer",
@@ -64,7 +74,7 @@ export const metadata: Metadata = {
     title: "Sushrutha S Kottary | Data Scientist & AI Engineer",
     description:
       "Data Scientist and Machine Learning Engineer specializing in Generative AI, RAG, LangChain, Deep Learning, and NLP. Based in Bengaluru, India.",
-    siteName: "Sushrutha S Kottary Portfolio",
+    siteName: "Sushrutha S Kottary",
     images: [
       {
         url: `${SITE_URL}/og-image.png`,
@@ -153,7 +163,7 @@ const jsonLd = {
       "@type": "WebSite",
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
-      name: "Sushrutha S Kottary Portfolio",
+      name: "Sushrutha S Kottary",
       description:
         "Portfolio of Sushrutha S Kottary — Data Scientist, Machine Learning Engineer, and Generative AI Developer.",
       publisher: {
