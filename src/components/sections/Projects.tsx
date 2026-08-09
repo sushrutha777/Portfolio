@@ -8,15 +8,15 @@ import Image from "next/image";
 const projects = [
   {
     id: "rag",
-    title: "End-to-End Agentic RAG System",
+    title: "End-to-End Agentic RAG System (Document, Web & Wikipedia Search)",
     points: [
-      "Built an agentic RAG system with conversational memory supporting PDFs, text files, and website URLs.",
-      "Implemented a ReAct agent with LangChain and LangGraph for vector search, Wikipedia search and web search.",
-      "Integrated Gemini 2.5 Flash with Google AI embeddings for accurate, grounded responses."
+      "Built a custom agent orchestrator using LiteLLM Gateway with zero-downtime failover between Gemini and Groq",
+      "Developed a hybrid retrieval pipeline using Qdrant, BM25, and FlashRank with in-memory conversational context management for multi-turn interactions, and evaluated performance using the RAGAS framework.",
+      "Implemented parallel tool execution (Tavily/DuckDuckGo, Wikipedia & document search) using asyncio.gather, reducing latency by ~50% and deployed to Google Cloud Platform (GCP)."
     ],
-    tags: ["Python", "LangChain", "LangGraph", "Gemini 2.5 Flash", "Streamlit"],
-    codeLink: "https://github.com/sushrutha777/AgenticRAG-with-Web-Search-and-Document-Search",
-    liveLink: "https://end-to-end-rag-document-search-by-sushrutha-s-kottary.streamlit.app/",
+    tags: ["Python", "LangChain", "LangGraph", "LiteLLM", "Groq", "Qdrant", "BM25", "FlashRank", "RAGAS", "GCP"],
+    codeLink: "https://github.com/sushrutha777/AI-Platform-with-Agentic-Retrieval",
+    liveLink: "https://enterprise-ai-platform-with-agentic-retrieval-git-605042885639.asia-south1.run.app/",
     image: "/agentic-rag.png",
   },
   {
@@ -24,10 +24,10 @@ const projects = [
     title: "Stock Movement Reason Finder",
     points: [
       "Built a FastAPI based tool to analyze NIFTY100 stock movements, identifying top gainers and losers.",
-      "Integrated Google News RSS and Gemini AI to explain major price spikes with real time news reasoning.",
+      "Integrated Google News and Gemini AI to explain major price spikes with real time news reasoning.",
       "Designed a modular backend for stock data fetching, news aggregation, and AI based insights."
     ],
-    tags: ["Python", "FastAPI", "Gemini AI", "Streamlit"],
+    tags: ["Python", "FastAPI", "Gemini AI", "Streamlit", "News Integration", "Data Aggregation"],
     codeLink: "https://github.com/sushrutha777/Stock_Movement_Reason_Finder",
     liveLink: "https://stock-movement-reason-finder.streamlit.app/",
     image: "/stock-movement.png",
@@ -36,11 +36,11 @@ const projects = [
     id: "invoice",
     title: "Multi-Language Invoice Q&A System",
     points: [
-      "Converts invoices (PDF/images) into PNG bytes for direct Gemini analysis without OCR.",
-      "Uses Gemini 2.5 Flash to answer user questions in English and all Gemini supported languages.",
+      "Converts invoices (PDF/images) into PNG bytes for direct Gemini analysis, eliminating the need for OCR.",
+      "Integrated the Gemini Vision model for multilingual invoice understanding and question-answering.",
       "Extracts key information from uploaded invoice documents (PDF/images) efficiently."
     ],
-    tags: ["Python", "Gemini 2.5 Flash", "Streamlit"],
+    tags: ["Python", "Gemini Vision", "Multimodal AI", "OCR-free Processing", "Streamlit"],
     codeLink: "https://github.com/sushrutha777/Multi-Language-Invoice-Extractor",
     liveLink: "https://multi-language-invoice-extractor-by-sushrutha-s-kottary.streamlit.app/",
     image: "/invoice-extractor.png",
@@ -53,7 +53,7 @@ const projects = [
       "Built a FastAPI-powered inference API and Streamlit UI for real-time movie review sentiment prediction.",
       "Implemented Docker, PyTest, and GitHub Actions CI/CD for automated testing and deployment."
     ],
-    tags: ["Python", "PyTorch", "FastAPI", "Streamlit", "Docker", "GitHub Actions"],
+    tags: ["Python", "PyTorch", "FastAPI", "DistilBERT", "MLOps", "Docker", "GitHub Actions (CI/CD)", "Streamlit"],
     codeLink: "https://github.com/sushrutha777/Movie-Review-Sentiment-Analysis-With-MLOps",
     liveLink: "https://movie-review-sentiment-analysis-with-mlops-by-sushrutha.streamlit.app/",
     image: "/sentiment-analysis.png",
@@ -97,8 +97,8 @@ export default function Projects() {
               </div>
 
               <div className="p-6 md:p-8">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
-                  <h3 className="text-2xl font-bold text-white group-hover:text-sky-400 transition-colors">
+                <div className="flex flex-col gap-4 mb-5">
+                  <h3 className="text-2xl font-bold text-white group-hover:text-sky-400 transition-colors leading-tight">
                     {project.title}
                   </h3>
                   

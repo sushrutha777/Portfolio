@@ -5,14 +5,15 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    role: "Data Science Intern",
-    company: "Lloyds Banking Group",
-    type: "Job Simulation",
-    date: "July 2025",
+    role: "Freelance Full Stack Developer",
+    company: "Freelance",
+    type: "Freelance",
+    date: "Jan 2026 — Present",
     bullets: [
-      "Conducted EDA on customer churn dataset using Python (Pandas, Matplotlib) uncover patterns.",
-      "Developed classification models (Logistic Regression, Random Forest) achieving ~77% accuracy.",
-      "Diagnosed class imbalance (23% churn cases) as root cause of poor recall for minority class customers."
+      <>Developed a production-ready fish delivery web application for a local fish business <a href="https://macchikart.in" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-white font-semibold transition-colors underline decoration-indigo-400/30 underline-offset-2">MacchiKart.in</a> with Firebase and Google Antigravity, featuring guest checkout, cash-on-delivery, order tracking, and an admin portal.</>,
+      <>Developed and deployed a portfolio website for an educational Institution <a href="https://www.baschoolandcollege.com/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-white font-semibold transition-colors underline decoration-indigo-400/30 underline-offset-2">BA School & College</a> and <a href="https://www.baitithumbay.com/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-white font-semibold transition-colors underline decoration-indigo-400/30 underline-offset-2">BA ITI</a>.</>,
+      <>Contributed to the development of the PDF utility web app <a href="https://trymypdf.web.app/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-white font-semibold transition-colors underline decoration-indigo-400/30 underline-offset-2">TryMyPDF</a> as part of the development team.</>,
+      "Implemented SEO techniques using Google Search Console to improve website indexing and search visibility."
     ]
   }
 ];
@@ -60,9 +61,6 @@ export default function Experience() {
                   <div className="flex flex-col md:items-end gap-2 shrink-0">
                     <span className="px-3 py-1 rounded-full bg-white/5 text-xs font-bold tracking-widest uppercase text-slate-400">
                       {exp.date}
-                    </span>
-                    <span className="px-3 py-1 rounded-full bg-indigo-400/10 text-indigo-400 text-xs font-bold tracking-widest uppercase border border-indigo-400/20">
-                      {exp.type}
                     </span>
                   </div>
                 </div>

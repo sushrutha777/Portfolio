@@ -1,5 +1,4 @@
 import Projects from "@/components/sections/Projects";
-import Achievements from "@/components/sections/Achievements";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -19,9 +18,8 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <div className="flex flex-col gap-10 pt-24 pb-4">
+    <div className="flex flex-col gap-10 pt-16 md:pt-20 pb-10">
       <Projects />
-      <Achievements />
     </div>
   );
 }

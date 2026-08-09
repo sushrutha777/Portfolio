@@ -74,7 +74,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 scroll-mt-24">
+    <section id="contact" className="w-full">
       <div className="max-w-6xl mx-auto px-6">
         <div className="glass rounded-[2rem] md:rounded-[3rem] p-8 md:p-16 relative overflow-hidden border border-white/5">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-purple/10 blur-[120px] rounded-full pointer-events-none" />
@@ -88,7 +88,7 @@ export default function Contact() {
                 viewport={{ once: true }}
               >
                 <h2 className="text-4xl md:text-5xl font-display font-extrabold text-white mb-6">
-                  Let's Talk
+                  Reach Out
                 </h2>
                 <div className="w-12 h-1 bg-brand-purple rounded-full mb-8"></div>
                 <p className="text-slate-400 text-lg mb-12 max-w-md leading-relaxed">

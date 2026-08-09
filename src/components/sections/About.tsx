@@ -18,6 +18,7 @@ export default function About() {
           <h2 className="text-3xl md:text-4xl font-bold font-display text-white mb-2">
             About
           </h2>
+          <div className="w-12 h-1 bg-brand-purple rounded-full"></div>
         </motion.div>
 
         <motion.div
@@ -36,7 +37,7 @@ export default function About() {
             
             <p className="text-slate-300 leading-relaxed mb-8 text-sm md:text-base">
               I am a proactive Data Science undergrad with a profound enthusiasm for developing data-driven solutions and exploring innovative technologies in Machine Learning and Generative AI. 
-              Currently, I'm delving deeply into Python and modern frameworks to construct robust AI applications. 
+              Currently, I am delving deeply into Python and modern frameworks to build production RAG systems and construct robust AI applications. 
               Always eager to learn and adapt, I look forward to contributing to impactful projects!
             </p>
 

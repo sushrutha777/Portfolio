@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function CertificationsPage() {
   return (
-    <div className="flex flex-col gap-10 pt-24 pb-4">
+    <div className="flex flex-col gap-10 pt-16 md:pt-20 pb-10">
       <Certifications />
     </div>
   );

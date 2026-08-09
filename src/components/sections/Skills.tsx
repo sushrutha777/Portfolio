@@ -8,51 +8,31 @@ const skillCategories = [
     title: "Languages & Databases",
     icon: Database,
     color: "text-sky-400",
-    skills: [
-      { name: "Python", desc: "Primary language for ML & backend" },
-      { name: "R", desc: "Statistical computing & data analysis" },
-      { name: "SQL & NoSQL", desc: "MySQL, MongoDB, Firestore" }
-    ]
+    skills: ["Python", "R", "C", "SQL", "MySQL", "MongoDB", "Firestore"]
   },
   {
-    title: "ML, DL & NLP",
+    title: "Machine Learning, Deep Learning & NLP",
     icon: BrainCircuit,
     color: "text-indigo-400",
-    skills: [
-      { name: "Neural Networks", desc: "CNN, RNN, LSTM, GRU" },
-      { name: "Core ML", desc: "Supervised/Unsupervised, Feature Eng." },
-      { name: "Model Deployment", desc: "End-to-end model lifecycle" }
-    ]
+    skills: ["Supervised & Unsupervised Learning", "Neural Networks", "CNN", "RNN", "Transformers", "Scikit-Learn", "TensorFlow", "Feature Engineering", "Model Evaluation", "Model Deployment", "MLOps"]
   },
   {
     title: "Generative AI",
     icon: Sparkles,
     color: "text-teal-400",
-    skills: [
-      { name: "RAG & Agents", desc: "ReAct Agents, Tool Integration" },
-      { name: "LangChain & LangGraph", desc: "Frameworks for LLM apps" },
-      { name: "Vector Stores", desc: "Embeddings & Semantic Search" }
-    ]
+    skills: ["RAG", "LLM Integration", "Embedding Models", "LangChain", "LangGraph", "LangSmith", "Vector Databases"]
   },
   {
-    title: "Data Analysis & Libraries",
+    title: "Data Analytics",
     icon: BarChart3,
     color: "text-emerald-400",
-    skills: [
-      { name: "Data Science Stack", desc: "Pandas, NumPy, Scikit-Learn" },
-      { name: "Deep Learning", desc: "TensorFlow" },
-      { name: "Visualization", desc: "Matplotlib, Seaborn, Tableau, PowerBI" }
-    ]
+    skills: ["Pandas", "NumPy", "Data Cleaning", "Data Visualization", "EDA", "Matplotlib", "Seaborn", "Tableau", "Power BI"]
   },
   {
-    title: "Tools & Version Control",
-    icon: GitBranch,
+    title: "Platforms",
+    icon: Wrench,
     color: "text-orange-400/80",
-    skills: [
-      { name: "Git & GitHub", desc: "Version control & collaboration" },
-      { name: "Cloud & Deployment", desc: "Firebase, Docker, Render, Streamlit, Hugging Face" },
-      { name: "Dev & AI Tools", desc: "VS Code, Google Antigravity" }
-    ]
+    skills: ["VS Code", "Git/GitHub", "Google Antigravity", "Firebase", "Streamlit", "Render", "Hugging Face", "Docker", "GCP"]
   }
 ];
 
@@ -72,7 +52,7 @@ export default function Skills() {
           <div className="w-12 h-1 bg-brand-purple rounded-full"></div>
         </motion.div>
 
-        <div className="space-y-12">
+        <div className="space-y-6">
           {skillCategories.map((category, idx) => (
             <motion.div
               key={category.title}
@@ -80,26 +60,23 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
+              className="glass p-6 md:p-8 rounded-3xl border border-white/5 hover:border-white/20 transition-all duration-300"
             >
-              <div className="flex items-center gap-3 mb-6">
-                <category.icon className={`w-6 h-6 ${category.color}`} />
-                <h3 className="text-xl font-bold text-white">{category.title}</h3>
+              <div className="flex items-center gap-4 mb-6">
+                <div className={`w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center shrink-0 ${category.color}`}>
+                  <category.icon size={24} />
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-white">{category.title}</h3>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="flex flex-wrap gap-3">
                 {category.skills.map((skill) => (
-                  <div
-                    key={skill.name}
-                    className="glass p-5 rounded-2xl border border-white/5 hover:border-white/20 transition-colors flex items-start gap-4 group"
+                  <span
+                    key={skill}
+                    className="px-4 py-2 rounded-full bg-white/5 text-slate-300 text-sm font-medium border border-white/10 hover:border-white/30 hover:bg-white/10 transition-colors"
                   >
-                    <div className={`w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform ${category.color}`}>
-                      <Code2 size={18} />
-                    </div>
-                    <div>
-                      <h4 className="text-white font-bold mb-1">{skill.name}</h4>
-                      <p className="text-slate-400 text-sm leading-relaxed">{skill.desc}</p>
-                    </div>
-                  </div>
+                    {skill}
+                  </span>
                 ))}
               </div>
             </motion.div>
