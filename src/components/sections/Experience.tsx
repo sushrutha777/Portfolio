@@ -34,7 +34,7 @@ export default function Experience() {
           <div className="w-12 h-1 bg-indigo-400 rounded-full"></div>
         </motion.div>
 
-        <div className="relative border-l border-white/10 ml-3 md:ml-6 space-y-12">
+        <div className="relative border-l border-white/10 ml-2 sm:ml-4 md:ml-6 space-y-8 md:space-y-12">
           {experiences.map((exp, idx) => (
             <motion.div
               key={idx}
@@ -42,15 +42,15 @@ export default function Experience() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="relative pl-8 md:pl-12"
+              className="relative pl-5 sm:pl-8 md:pl-12"
             >
               {/* Timeline Node */}
-              <div className="absolute -left-3 md:-left-4 top-0 w-6 h-6 md:w-8 md:h-8 rounded-full bg-[#090909] border-2 border-indigo-400 flex items-center justify-center">
-                <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-indigo-400" />
+              <div className="absolute -left-[9px] sm:-left-[13px] md:-left-4 top-1 sm:top-0 w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 rounded-full bg-[#090909] border-2 border-indigo-400 flex items-center justify-center">
+                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 md:w-3 md:h-3 rounded-full bg-indigo-400" />
               </div>
 
-              <div className="glass p-5 sm:p-6 md:p-8 rounded-2xl md:rounded-3xl border border-white/5 hover:border-indigo-400/20 transition-all duration-300">
-                <div className="flex flex-col md:flex-row md:items-start justify-between gap-3 md:gap-4 mb-5 md:mb-6">
+              <div className="glass p-4 sm:p-5 md:p-8 rounded-2xl md:rounded-3xl border border-white/5 hover:border-indigo-400/20 transition-all duration-300">
+                <div className="flex flex-col md:flex-row md:items-start justify-between gap-2.5 md:gap-4 mb-4 md:mb-6">
                   <div>
                     <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-1 leading-tight">{exp.role}</h3>
                     <div className="flex items-center gap-2 text-indigo-400 font-semibold text-sm md:text-base">
@@ -58,7 +58,7 @@ export default function Experience() {
                       <span>{exp.company}</span>
                     </div>
                   </div>
-                  <div className="flex flex-col md:items-end gap-2 shrink-0">
+                  <div className="flex flex-col items-start md:items-end gap-2 shrink-0">
                     <span className="px-3 py-1 rounded-full bg-white/5 text-[10px] md:text-xs font-bold tracking-widest uppercase text-slate-400">
                       {exp.date}
                     </span>
