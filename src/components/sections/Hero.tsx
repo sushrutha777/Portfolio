@@ -33,7 +33,7 @@ export default function Hero() {
             </Link>
             
             <a
-              href="/Sushrutha.pdf"
+              href="/Sushrutha.pdf?v=latest"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 rounded-full bg-[#151515] border border-white/10 hover:bg-[#202020] hover:border-brand-purple/30 transition-all text-white font-medium text-sm md:text-base group"

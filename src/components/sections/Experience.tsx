@@ -49,17 +49,17 @@ export default function Experience() {
                 <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-indigo-400" />
               </div>
 
-              <div className="glass p-6 md:p-8 rounded-3xl border border-white/5 hover:border-indigo-400/20 transition-all duration-300">
-                <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-6">
+              <div className="glass p-5 sm:p-6 md:p-8 rounded-2xl md:rounded-3xl border border-white/5 hover:border-indigo-400/20 transition-all duration-300">
+                <div className="flex flex-col md:flex-row md:items-start justify-between gap-3 md:gap-4 mb-5 md:mb-6">
                   <div>
-                    <h3 className="text-xl md:text-2xl font-bold text-white mb-1">{exp.role}</h3>
-                    <div className="flex items-center gap-2 text-indigo-400 font-semibold">
-                      <Briefcase size={16} />
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-1 leading-tight">{exp.role}</h3>
+                    <div className="flex items-center gap-2 text-indigo-400 font-semibold text-sm md:text-base">
+                      <Briefcase size={16} className="shrink-0" />
                       <span>{exp.company}</span>
                     </div>
                   </div>
                   <div className="flex flex-col md:items-end gap-2 shrink-0">
-                    <span className="px-3 py-1 rounded-full bg-white/5 text-xs font-bold tracking-widest uppercase text-slate-400">
+                    <span className="px-3 py-1 rounded-full bg-white/5 text-[10px] md:text-xs font-bold tracking-widest uppercase text-slate-400">
                       {exp.date}
                     </span>
                   </div>
@@ -67,8 +67,8 @@ export default function Experience() {
 
                 <ul className="space-y-3">
                   {exp.bullets.map((bullet, i) => (
-                    <li key={i} className="flex gap-3 text-slate-300 text-sm md:text-base leading-relaxed">
-                      <span className="text-slate-500 mt-1">•</span>
+                    <li key={i} className="flex gap-2.5 md:gap-3 text-slate-300 text-sm md:text-base leading-relaxed">
+                      <span className="text-slate-500 mt-1 shrink-0">•</span>
                       <span>{bullet}</span>
                     </li>
                   ))}
