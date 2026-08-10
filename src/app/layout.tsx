@@ -162,8 +162,9 @@ const jsonLd = {
     {
       "@type": "WebSite",
       "@id": `${SITE_URL}/#website`,
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       name: "Sushrutha S Kottary",
+      alternateName: ["Sushrutha Kottary", "Sushrutha's Portfolio"],
       description:
         "Portfolio of Sushrutha S Kottary — Data Scientist, Machine Learning Engineer, and Generative AI Developer.",
       publisher: {
