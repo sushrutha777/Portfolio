@@ -52,7 +52,7 @@ export default function Skills() {
           <div className="w-12 h-1 bg-brand-purple rounded-full"></div>
         </motion.div>
 
-        <div className="space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {skillCategories.map((category, idx) => (
             <motion.div
               key={category.title}
@@ -69,14 +69,14 @@ export default function Skills() {
                 <h3 className="text-xl md:text-2xl font-bold text-white">{category.title}</h3>
               </div>
 
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-2.5 mt-2">
                 {category.skills.map((skill) => (
-                  <span
+                  <div
                     key={skill}
-                    className="px-4 py-2 rounded-full bg-white/5 text-slate-300 text-sm font-medium border border-white/10 hover:border-white/30 hover:bg-white/10 transition-colors"
+                    className="flex items-center px-3 py-1.5 md:px-4 md:py-2 rounded-lg bg-white/5 text-slate-300 text-sm md:text-base font-medium border border-white/10 hover:border-white/30 hover:bg-white/10 transition-colors shadow-sm"
                   >
                     {skill}
-                  </span>
+                  </div>
                 ))}
               </div>
             </motion.div>
