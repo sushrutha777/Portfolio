@@ -5,6 +5,10 @@ import { Award, ExternalLink } from "lucide-react";
 
 const certs = [
   {
+    title: "AI Security Bootcamp - Guardrails, LLM Gateways, Observability",
+    link: "https://www.udemy.com/certificate/UC-72fe1a9a-ca07-42b8-a0fd-ea347fbfd7a7/"
+  },
+  {
     title: "IBM RAG & Agentic AI Professional Certificate",
     link: "https://www.coursera.org/account/accomplishments/professional-cert/5QFWX5VUMM44"
   },
