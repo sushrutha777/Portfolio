@@ -29,16 +29,16 @@ export default function About() {
           className="glass p-8 md:p-10 rounded-3xl border border-white/5 relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-purple/5 blur-[100px] rounded-full pointer-events-none" />
-          
+
           <div className="relative z-10">
             <h3 className="text-2xl font-bold text-white mb-4 border-b border-white/10 pb-2 inline-block">
               About me
             </h3>
-            
+
             <p className="text-slate-300 leading-relaxed mb-8 text-sm md:text-base">
-              I am a proactive Data Science undergrad with a profound enthusiasm for developing data-driven solutions and exploring innovative technologies in Machine Learning and Generative AI. 
-              Currently, I am delving deeply into Python and modern frameworks to build production RAG systems and construct robust AI applications. 
-              Always eager to learn and adapt, I look forward to contributing to impactful projects!
+              Data Science undergraduate with hands-on experience building production-grade AI systems across Machine Learning, Deep Learning and Generative AI.
+              I build end-to-end RAG pipelines, LLM-powered applications and MLOps workflows, with a consistent focus on reliability, scalability and real-world impact.
+              Open to roles and collaborations where I can apply my expertise to build meaningful, AI-driven solutions.
             </p>
 
             <div className="flex flex-wrap gap-4">

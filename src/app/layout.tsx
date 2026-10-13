@@ -121,7 +121,7 @@ const jsonLd = {
       url: SITE_URL,
       jobTitle: "Data Scientist & Generative AI Engineer",
       description:
-        "Final year Data Science student specializing in AI, ML, Deep Learning, Generative AI, RAG, and LangChain. Based in Bengaluru, India.",
+        "Final year Data Science student specializing in Generative AI, MLOps, and Full-Stack development, building production-ready AI systems. Based in Bengaluru, India.",
       email: "sushruthaskottary777@gmail.com",
       sameAs: [
         "https://github.com/sushrutha777",

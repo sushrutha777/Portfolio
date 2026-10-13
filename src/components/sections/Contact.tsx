@@ -92,7 +92,7 @@ export default function Contact() {
                 </h2>
                 <div className="w-12 h-1 bg-brand-purple rounded-full mb-8"></div>
                 <p className="text-slate-400 text-lg mb-12 max-w-md leading-relaxed">
-                  Actively seeking roles in Data Science, ML, and Generative AI, with a strong interest in building intelligent, data driven solutions.
+                  Actively seeking roles in Data Science, ML and Generative AI with a strong interest in building intelligent, data driven solutions.
                 </p>
 
                 <div className="space-y-6">

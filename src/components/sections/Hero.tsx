@@ -21,7 +21,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-lg md:text-2xl text-slate-400 font-light max-w-2xl leading-relaxed">
-            Final year Data Science student with experience in AI, ML, and DL, crafting code to solve real-world problems.
+            Final year Data Science student specializing in Generative AI, MLOps, and Full-Stack development, building production-ready AI systems.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 mt-8">

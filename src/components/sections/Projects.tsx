@@ -10,11 +10,11 @@ const projects = [
     id: "rag",
     title: "End-to-End Agentic RAG System (Document, Web & Wikipedia Search)",
     points: [
-      "Built a custom agent orchestrator using LiteLLM Gateway with zero-downtime failover between Gemini and Groq",
-      "Developed a hybrid retrieval pipeline using Qdrant, BM25, and FlashRank with in-memory conversational context management for multi-turn interactions, and evaluated performance using the RAGAS framework.",
-      "Implemented parallel tool execution (Tavily/DuckDuckGo, Wikipedia & document search) using asyncio.gather, reducing latency by ~50% and deployed to Google Cloud Platform (GCP)."
+      "Developed an Agentic RAG platform using LangGraph for workflow orchestration with LiteLLM integration for Gemini and Groq model routing and automatic fallback to ensure reliable response generation.",
+      "Implemented hybrid retrieval using Qdrant vector search, BM25 keyword retrieval and FlashRank reranking, with sliding-window memory for multi-turn conversations and Model Armor input guardrails.",
+      "Integrated document search, Tavily/DuckDuckGo web search and Wikipedia search with parallel execution using asyncio.gather, LangSmith tracing and automated CI/CD deployment to GCP."
     ],
-    tags: ["Python", "LangChain", "LangGraph", "LiteLLM", "Groq", "Qdrant", "BM25", "FlashRank", "RAGAS", "GCP"],
+    tags: ["Python", "LangChain", "LangGraph", "LiteLLM", "Gemini", "Groq", "Qdrant", "BM25", "FlashRank", "LangSmith", "Model Armor", "Tavily", "RAGAS", "CI/CD", "GCP"],
     codeLink: "https://github.com/sushrutha777/AI-Platform-with-Agentic-Retrieval",
     liveLink: "https://enterprise-ai-platform-with-agentic-retrieval-git-605042885639.asia-south1.run.app/",
     image: "/agentic-rag.png",
@@ -23,11 +23,11 @@ const projects = [
     id: "stock",
     title: "Stock Movement Reason Finder",
     points: [
-      "Built a FastAPI based tool to analyze NIFTY100 stock movements, identifying top gainers and losers.",
-      "Integrated Google News and Gemini AI to explain major price spikes with real time news reasoning.",
-      "Designed a modular backend for stock data fetching, news aggregation, and AI based insights."
+      "Developed a stock analysis system to calculate percentage price changes across NIFTY100 stocks over a user-selected period, rank stock performance and identify the top 5 gainers and losers.",
+      "Integrated Google News with Gemini to summarize stock performance based on recent news headlines.",
+      "Developed an interactive Streamlit UI with Plotly visualizations and deployed the application on Render."
     ],
-    tags: ["Python", "FastAPI", "Gemini AI", "Streamlit", "News Integration", "Data Aggregation"],
+    tags: ["Python", "FastAPI", "Gemini AI", "Streamlit", "Plotly", "Render", "Google News", "Data Aggregation"],
     codeLink: "https://github.com/sushrutha777/Stock_Movement_Reason_Finder",
     liveLink: "https://stock-movement-reason-finder.streamlit.app/",
     image: "/stock-movement.png",
@@ -50,10 +50,10 @@ const projects = [
     title: "End-to-End Movie Review Sentiment Analysis With MLOps",
     points: [
       "Fine-tuned a DistilBERT model on the IMDB dataset, achieving 92% test accuracy for sentiment classification.",
-      "Built a FastAPI-powered inference API and Streamlit UI for real-time movie review sentiment prediction.",
-      "Implemented Docker, PyTest, and GitHub Actions CI/CD for automated testing and deployment."
+      "Containerized and deployed the model on Hugging Face with Streamlit UI, PyTest and GitHub Actions CI/CD.",
+      "Implemented production monitoring for the FastAPI inference API using Prometheus and Grafana Cloud to track errors, request latency, model inference time and sentiment prediction distribution through dashboards."
     ],
-    tags: ["Python", "PyTorch", "FastAPI", "DistilBERT", "MLOps", "Docker", "GitHub Actions (CI/CD)", "Streamlit"],
+    tags: ["Python", "TensorFlow", "FastAPI", "DistilBERT", "MLOps", "Docker", "Hugging Face", "PyTest", "GitHub Actions (CI/CD)", "Prometheus", "Grafana Cloud", "Streamlit"],
     codeLink: "https://github.com/sushrutha777/Movie-Review-Sentiment-Analysis-With-MLOps",
     liveLink: "https://movie-review-sentiment-analysis-with-mlops-by-sushrutha.streamlit.app/",
     image: "/sentiment-analysis.png",
